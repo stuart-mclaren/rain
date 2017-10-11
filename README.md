@@ -33,7 +33,7 @@ Type `rain --help` for a full list of options.
 ## Installation
 
 ```
-$ git clone [TODO - include git repo location]
+$ git clone https://github.com/stuart-mclaren/rain
 $ cd rain
 $ python setup.py install
 ```
