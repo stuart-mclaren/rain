@@ -32,9 +32,17 @@ Type `rain --help` for a full list of options.
 
 ## Installation
 
+### Debian/Ubuntu
+
 ```
 $ git clone https://github.com/stuart-mclaren/rain
 $ cd rain
-$ python setup.py install
+```
+
+As root
+
+```
+# apt-get install python-lxml python-dateutil python-requests python-setuptools
+# python setup.py install
 ```
 
