@@ -111,11 +111,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	err = ioutil.WriteFile("debug-go.xml", body, 0644)
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	err = xml.Unmarshal(body, &w)
 	if err != nil {
 		log.Fatal(err)
