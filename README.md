@@ -35,7 +35,7 @@ Type `rain --help` for a full list of options.
 Binary (Linux/amd64 only)
 
 ```
-$ curl https://github.com/stuart-mclaren/rain/releases/latest/Linux/amd64/rain
+$ curl -LO https://github.com/stuart-mclaren/rain/raw/master/releases/2.0.1/Linux/amd64/rain
 $ chmod 755 ./rain
 $ ./rain
 ```
