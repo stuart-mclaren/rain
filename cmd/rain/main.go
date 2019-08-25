@@ -96,7 +96,7 @@ func main() {
 
 	flag.Parse()
 	resp, err := http.Get(
-		"http://api.met.no/weatherapi/locationforecast/1.9/" +
+		"https://api.met.no/weatherapi/locationforecast/1.9/" +
 			"?lat=" + fmt.Sprintf("%f", *latitude) +
 			";lon=" + fmt.Sprintf("%f", *longitude),
 	)
