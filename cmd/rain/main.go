@@ -95,11 +95,17 @@ func main() {
 	}
 
 	flag.Parse()
-	resp, err := http.Get(
-		"https://api.met.no/weatherapi/locationforecast/1.9/" +
-			"?lat=" + fmt.Sprintf("%f", *latitude) +
-			";lon=" + fmt.Sprintf("%f", *longitude),
-	)
+	url := "https://api.met.no/weatherapi/locationforecast/2.0/classic" +
+		"?lat=" + fmt.Sprintf("%f", *latitude) +
+		";lon=" + fmt.Sprintf("%f", *longitude)
+
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	req.Header.Set("User-Agent", "curl/7.64.0")
+	client := &http.Client{}
+	resp, err := client.Do(req)
 	if err != nil {
 		log.Fatal(err)
 	}
