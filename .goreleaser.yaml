@@ -16,6 +16,7 @@ builds:
       - darwin
       - freebsd
 archives:
+  format: binary
   - replacements:
       darwin: Darwin
       linux: Linux
