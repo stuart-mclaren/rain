@@ -2,9 +2,8 @@ name: goreleaser
 
 on:
   push:
-    # run only against semver tags
     tags:
-      - "v*.*.*"
+      - "*.*.*"
 
 permissions:
   contents: write
