@@ -32,15 +32,14 @@ Type `rain --help` for a full list of options.
 
 ## Installation
 
-Binary (Linux/amd64 only)
+Binaries for different operating systems (Windows, Linux, etc) are available for
+download here:
 
-```
-$ curl -LO https://github.com/stuart-mclaren/rain/raw/master/releases/3.0.2/Linux/amd64/rain
-$ chmod 755 ./rain
-$ ./rain
-```
+https://github.com/stuart-mclaren/rain/releases
 
-From source (other platforms)
+## Compiling
+
+To compile from source
 
 ```
 $ git clone https://github.com/stuart-mclaren/rain
