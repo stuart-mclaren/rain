@@ -16,7 +16,6 @@ builds:
       - darwin
       - freebsd
 archives:
-  format: binary
   - replacements:
       darwin: Darwin
       linux: Linux
@@ -24,5 +23,6 @@ archives:
       windows: Windows
       386: i386
       amd64: x86_64
+    format: binary
 checksum:
   name_template: 'checksums.txt'
